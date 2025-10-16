@@ -1,3 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Envs / secrets
+.env
+
+# Chroma local data
+chroma_db/
+
+# OS
+Thumbs.db
+.DS_Store
 .env
 \chroma_db
 \__pycache__

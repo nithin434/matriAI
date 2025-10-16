@@ -195,7 +195,7 @@ def hybrid_search(
 def on_startup():
     global mongo_client, mongo_coll, embeddings, vector_store
 
-    api_key = "AIzaSyBZmHqk_2uAvbk3DdzF4A4Rh9OpaVgf_SI"#os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY not set")
 
