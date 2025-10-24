@@ -15,6 +15,6 @@ chroma_db/
 Thumbs.db
 .DS_Store
 .env
-\chroma_db
+
 \__pycache__
 .DS_Store

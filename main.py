@@ -10,6 +10,7 @@ Requirements: GEMINI_API_KEY in environment, MongoDB running locally.
 """
 from typing import Optional, List, Dict, Any
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from bson import ObjectId
 from bson.errors import InvalidId
@@ -34,6 +35,15 @@ EMBED_MODEL = "models/text-embedding-004"
 
 # ---------- App ----------
 app = FastAPI(title="AI Matrimonial RAG API", version="0.3.0")
+
+# Configure CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 mongo_client: MongoClient | None = None
 mongo_coll = None
@@ -305,4 +315,4 @@ def match(
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-# Run with: uvicorn main:app --reload
+
