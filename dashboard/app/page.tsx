@@ -44,7 +44,7 @@ export default function Home() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/health`)
+        const response = await fetch(`http://localhost:3000/health`)
         if (!response.ok) {
           console.warn("[v0] API health check failed")
         }
