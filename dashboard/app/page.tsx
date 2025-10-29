@@ -8,7 +8,7 @@ import AIReviewPanel from "@/components/ai-review-panel"
 import CandidatesList from "@/components/candidates-list"
 import HealthBadge from "@/components/health-badge"
 
-const API_BASE_URL = "http://localhost:8000"
+const API_BASE_URL = "http://46.62.128.84:8000"
 
 interface Match {
   _id: string
