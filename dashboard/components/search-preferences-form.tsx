@@ -331,19 +331,19 @@ export default function SearchPreferencesForm({ onSearch, onClear, apiUrl }: Sea
       </div>
 
       {/* Caste */}
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <label className="text-sm font-medium text-foreground/80">Caste (optional)</label>
         <Input type="text" name="caste" value={formData.caste} onChange={handleChange} placeholder="e.g., Brahmin" />
-      </div>
+      </div> */}
 
       {/* Sect */}
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <label className="text-sm font-medium text-foreground/80">Sect (optional)</label>
         <Input type="text" name="sect" value={formData.sect} onChange={handleChange} placeholder="e.g., Hindu" />
-      </div>
+      </div> */}
 
       {/* Marital Status */}
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <label className="text-sm font-medium text-foreground/80">Marital Status (optional)</label>
         <select
           name="marital_status"
@@ -356,7 +356,7 @@ export default function SearchPreferencesForm({ onSearch, onClear, apiUrl }: Sea
           <option>Divorced</option>
           <option>Widowed</option>
         </select>
-      </div>
+      </div> */}
 
       {/* State */}
       <div className="space-y-2">
